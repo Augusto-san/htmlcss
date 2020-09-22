@@ -1,0 +1,43 @@
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 720px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+/*a primeira cor hexadecimal, será exibida caso a imagem não carregue, 
+o repeat-x, faz com que a imagem se repita no eixo x, ou seja, na horizontal*/
+}
+
+ul li{
+	float: left;
+}
+
+ul a {
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a {
+	background: none;
+}
+
+ul a:hover{
+	color: #085662;
+	background: #44cade;
+	color: #fff;
+}
+
+#home #nav-lateral .home a,
+#sobre #nav-lateral .sobre a,
+#servicos #nav-lateral .servicos a,
+#noticias #nav-lateral .noticias a,
+#contato #nav-lateral .contato a {
+	background-position: right bottom ;
+	color: #fff;
+	background-color: #f99200;
+}

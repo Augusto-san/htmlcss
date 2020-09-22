@@ -1,0 +1,103 @@
+
+/*SELETOR UNIVERSAL*/
+* {
+	border: 1px solid blue;
+}
+
+
+/*SELETOR DE TEXTO*/
+h1{
+	color:red;
+}
+
+
+/*SELETOR DE CLASSE*/
+.verde{
+	color:green;
+}
+
+
+/*SELETOR DO ELEMENTO DE UMA CLASS*/
+/*eu quero o elemento span que pertence à class verde*/
+span.verde{
+	color:pink;
+}
+
+
+/*SELETOR DE ID*/
+#bodi{
+	border: 2px solid orange;
+}
+
+
+/*SELETOR DE FILHO
+seleciona quaisquer elementos <a> que são filhos de 
+um elemento <li>, mas não outros elementos <a> na pádina.
+Note que a formatação só é aplicada aos elementos <a> 
+filhos da li, portanto, se houver elemento <a> filhos
+de filhos da li, eles não recebrão a formatação. Então 
+o elemento filho precisa estar diretamente relacionado ao
+elemento pai*/
+li > a {
+	background: yellow;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+
+/*SELETOR DE DESCENDENTE
+Esse seletor possibilita que a formatação seja aplicada
+a todos os elementos descendentes. Então, mesmo que o elemento
+<a> esteja aninhado em outro elemento que está dentro do elemento
+<p>, a formatação será aplicada. Isso significa que os elementos
+não precisam estar diretamente ligados*/
+p a {
+	font-weight: 10px;
+	background: red;
+}
+
+
+/*SELETOR DE IRMÃO ADJACENTE
+Seleciona o primeiro elemento <h2> depois de 
+qualquer elemento <h1>*/
+h1 + h2 {
+	color:gray;
+}
+
+
+/*SELETOR DE IRMÃO GERAL
+seleciona todos os elementos <p> que são irmãos
+de <h1>. Ou seja, esse seletor seleciona um elemento
+que é um irmão de outro, embora ele não precise ser
+o elemento diretamente precedente*/
+h3~p{
+	background: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

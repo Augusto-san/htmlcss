@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+          .conteudo2{
+            background: red;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 70px 0px 0px 100px;
+            position: absolute;
+            z-index: 1;
+        }
+		.conteudo1{
+        	background: blue;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            margin:50px 0px 0px 50px;
+            z-index: 1;
+        }
+        .conteudo3{
+        	background: green;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 100px 0px 0px 80px;
+            position: absolute;
+            z-index: 2;
+        }
+        /*o elemento que possuir o maior número no z-index, ficará posicionado acima do elemento que não possui z-index ou possui um número menor, caso os elementos possuam o mesmo número no z-index, então o elemento que tiver sido criado depois, vai se sobrepor*/
+
+        #conteiner{
+        	background: black;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin-top: 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="conteiner">
+
+
+        <div class="conteudo1">
+            conteudo1
+        </div>
+
+        <div class="conteudo2">
+            conteudo2
+        </div>
+        <!--Veja que, no CSS os z-indexs do conteúdo 1 e 2 são o mesmo número, mas como o cónteúdo 2 foi criado depois, ele se sobrepõe ao conteúdo 1-->
+
+        <div class="conteudo3">
+            conteudo3
+      	</div>
+     </div>
+  </body>
+</html>
